@@ -1,0 +1,89 @@
+	<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>BookShop</title>
+    </head>
+    <body>
+        <div class="order">
+            <form class="order_form">
+                <h1 class="order_tittle">Order Form</h1>
+                <fieldset>
+                <legend>Customer Information</legend>
+
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="surname">Surname: </label>
+                    <input type="text" id="surname" name="surname" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="date">Delivery date: </label>
+                    <input type="date" id="date" name="date" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="street">Street: </label>
+                    <input type="text" id="street" name="street" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div >
+                    <label for="house">House number: </label>
+                    <input type="text" id="house" name="house" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="flat">Flat number: </label>
+                    <input type="text" id="flat" name="number" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                </fieldset>
+
+                <fieldset>
+                <legend>Payment Method:</legend>
+                <div>
+                    <input type="radio" id="cash" name="payment" required>
+                    <label for="cash">Cash</label>
+                </div>
+                <div>
+                    <input type="radio" id="card" name="payment" required>
+                    <label for="card">Card</label>
+                </div>
+                <span class="error" aria-live="polite"></span>
+                </fieldset>
+                <fieldset>
+                <legend>Gift*:</legend>
+                <div>
+                    <input type="checkbox" id="pack" name="present" value="pack">
+                    <label for="pack">Pack as a gift</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="postcard" name="present" value="postcard">
+                    <label for="pack">Add postcard</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="discount" name="present" value="discount">
+                    <label for="pack">Provide 2% discount to the next time</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="branded" name="present" value="branded">
+                    <label for="pack">Branded pen or pencil</label>
+                </div>
+                
+                <p>* only 2 gifts per order available</p>
+                </fieldset>
+
+                <button type="submit" class="order_button disabled">Complete</button>
+            </form>
+        </div>
+
+        
+    </body>
+    </html>
