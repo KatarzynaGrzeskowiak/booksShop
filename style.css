@@ -1,16 +1,18 @@
 body{
+    background: url(./assets/images/library.jpg) no-repeat center center/ cover;
+    height: 100vh;
     display: grid;
     align-items: center;
     justify-content: center;
 }
 
 
+/* Form style */
 .order_button{
     border-radius: 12px;
     transition-duration: 0.4s;
     width: 40%;
     height: 40px;
-   
 }
 
 .order_button:hover {
@@ -49,13 +51,11 @@ body{
 fieldset{
     border-radius: 8px;
     margin: 10px;
-    
 }
 
 input{
     border-radius: 4px;
     margin:2px;
-    
 }
 
 input:invalid {
@@ -69,7 +69,6 @@ input:focus:invalid {
 input:valid {
     border:2px solid#4CAF50;
 }
-
 
 
 legend{

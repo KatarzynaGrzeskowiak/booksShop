@@ -3,7 +3,7 @@ header.classList.add('header');
 document.body.append(header)
 
 let h1 = document.createElement('h1');
-const textNode = document.createTextNode("Sorry for not creating JavaScript Bookshop page :(")
+const textNode = document.createTextNode("Book Shop")
 h1.appendChild(textNode);
 document.body.appendChild(h1);
 
@@ -19,3 +19,11 @@ function myFunction() {
 
 
 
+
+const fragment = document.createDocumentFragment();
+
+const app = new BookShop(frag);
+document.body.append(frag);
+fetch('./books.json').then(res=>res.json()).then(booksData=>{
+  app.update(booksData);
+})
