@@ -1,11 +1,15 @@
 body{
     background: url(./assets/images/library.jpg) no-repeat center center/ cover;
     height: 100vh;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.header{
+    font-size: 40px;
+    color: #fff;
+}
 
 /* Form style */
 .order{
